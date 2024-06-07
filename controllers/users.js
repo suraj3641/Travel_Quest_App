@@ -37,7 +37,7 @@ module.exports.signup= async(req,res)=>{
 
 
 module.exports.login=async(req,res)=>{
-    req.flash( "success", "Welcome back to Travel quest! ");
+    req.flash( "success", "Welcome back to Travel Quest! ");
     let redirectUrl=res.locals.redirectUrl||"/listings";
     res.redirect(redirectUrl);
 };
